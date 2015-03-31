@@ -1,0 +1,52 @@
+div.controlBar
+{
+	position:fixed;
+	top:0%;
+	left:9%;
+	background-color: rgba(254,245,245,0.8);
+	width:88%;
+	z-index: 1;
+}
+.search
+{
+	width:30%;
+}
+table.controlBar
+{
+	width:100%;
+}
+tr.controlBar
+{
+	width:98%;
+}
+td.controlBar
+{
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	color:#FF6600;
+	font-family: helvetica;
+	font-size: 17px;
+	text-align: center;
+	background-color: inherit;
+}
+td.controlBar:hover
+{
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	color:#FF6600;
+	font-family: helvetica;
+	font-size: 17px;
+	text-align: center;
+	background-color: inherit;
+	border-style: solid;
+	border-color: red;
+}
+img.controlBar
+{
+	width:8%;
+	height:10%;
+}

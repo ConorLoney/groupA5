@@ -1,0 +1,69 @@
+div.contentHolder
+{
+	position: static;
+	padding-top:10%;
+	z-index: -1;
+}
+div.country
+{
+	position: static;
+	padding-left: 12%;
+	height:20px;
+	width:60%;
+	z-index: -1;
+}
+img.country
+{
+	z-index: -1;
+}
+table.contents
+{
+	background-color: rgba(138,83,83,0.4);
+	background-size: 105%;
+	position: relative;
+	left:12%;
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	width:60%;
+	z-index: -1;
+}
+tr.contents
+{
+	position: static;
+	width:12%;
+	height: 12%;
+	padding-bottom: 1.5%;
+	padding-top: 1.5%;
+	z-index: -1;
+}
+td.contents
+{
+	width: 12%;
+	height: 12%;
+	color:white;
+	z-index: -1;
+}
+img.contents
+{
+	float:left;
+	width:100%;
+	height:10%;
+	z-index: -1;
+}
+ul.contents
+{
+	position: static;
+	list-style-type: none;
+	z-index: -1;
+}
+li.contents
+{
+	font-size: 10px;
+	font-family: helvetica;
+	color:white;
+	z-index: -1;
+}
+
+

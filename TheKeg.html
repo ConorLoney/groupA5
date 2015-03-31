@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>The Keg.</title>
+	<link rel="stylesheet" type="text/css" href="TheKegBody.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="contentTable.css">
+	<link rel="stylesheet" type="text/css" href="controlBar.css">
+</head>
+
+<body>
+	
+	<!--Control bar, has all the necessary page functions, search, cart, wishlist, sign in, when the js goes in they should all work;
+	follows the page down, on hover border turns red so its obvious what you're clicking -->
+	<div class="controlBar">
+		<table class="controlBar">
+			<tr class="controlBar">
+				<td class="controlBar">
+					<form>
+					<!--search bar @ http://www.w3schools.com/html/html_form_input_types.asp -->
+					  <input class="search" type="search" name="search">
+					  <br>Search
+					</form>
+				</td>
+				<td class="controlBar">Sign In</td>
+				<!--images for wishlist and cart, hover and <dfn> will define them -->
+				<td class="controlBar"><dfn title="wishlist"><img class="controlBar" src="wish.png"/></dfn></td>
+				<td class="controlBar"><dfn title="cart"><img class="controlBar" src="cart.png"/></dfn></td>
+			</tr>
+		</table>
+	</div>
+
+	<!--Logo, name, follows the page scroll, css{position:fixed;} -->
+	<div class="TheKeg">
+		<img class="TheKegImg" src="theKeg.png"/><h1><p class="TheKeg">Online</p>The<p class="TheKeg">Craft</p>K<p class="TheKeg">Beer</p>E<p class="TheKeg">Retailer</p>G</h1>
+	</div>
+
+	<!--Click to jump straight to one of the sections, split in countries and continents -->
+	<!--Used anchors to jump, use link tag to href to an ID, i.e #Ireland, on click - the tag links you to the corresponding ID further down the page, for #Ireland, give the section the same ID as the Href. Info on anchors: http://help.typepad.com/anchor-tags.html -->
+	<div class="toCountry">
+		<p class="toCountry">Jump straight to some<br> of our great selections<br> of beer and merchandise!!</p>
+		<!-- On hover links will brighten ,click and page jumps to relevant section -->	
+		<ul class="toCountry">
+			<li class="toCountry"><a class="toCountry" href="#Ireland">Ireland</a></li><!-- {Europe} -->	
+			<li class="toCountry"><a class="toCountry" href="#Germany">Germany</a></li>
+			<li class="toCountry"><a class="toCountry" href="#Czech">Czech Republic</a></li>
+			<li class="toCountry"><a class="toCountry" href="#Denmark">Denmark</a></li>      
+			<li class="toCountry"><a class="toCountry" href="#America">America</a></li><!-- {Americas} -->	
+			<li class="toCountry"><a class="toCountry" href="#Canada">Canada</a></li>
+			<li class="toCountry"><a class="toCountry" href="#Mexico">Mexico</a></li>
+			<li class="toCountry"><a class="toCountry" href="#China">China</a></li><!-- {Aisa/Oz} -->	
+			<li class="toCountry"><a class="toCountry" href="#Oz">Australia</a></li>
+			<li class="toCountry"><a class="toCountry" href="#Merch">TheKeg &#174 &#8482 Merchandise</a></li><!-- {TheKeg merchandise} -->	
+		</ul>
+	</div>
+
+	<div class="contentHolder">
+	<!--marquee tag creats scrolling content// http://www.tutorialspoint.com/html/html_marquee_tag.htm (more info on marquee tag) -->
+	<!--direction="down"// so the content scrolls down -->
+	<!--its in a div to restrict it to the area I want to position it in-->
+	<div class="country">
+		<marquee direction="down" height="100%" width="100%">
+			<img id="Ireland" class="country" src="ireland.jpg"><!--id="Ireland" is the anchor link -->
+		</marquee>
+	</div>
+
+	<!--The merchandise -->
+	<!--Each table has 5 elements
+	10 tables, 9 countries-5 beers each - and the "TheKeg" merchandise table -->
+	<!--used 10 different tables instead of 10 <tr> tags so I could put the country designations in between easier -->
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="irishbeer.jpg"/></li>
+					<li class="contents">irish beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="irishbeer.jpg"/></li>
+					<li class="contents">irish beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="irishbeer.jpg"/></li>
+					<li class="contents">irish beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="irishbeer.jpg"/></li>
+					<li class="contents">irish beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="irishbeer.jpg"/></li>
+					<li class="contents">irish beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<div class="country">
+		<marquee direction="down" height="100%" width="100%">
+			<img id="Germany" class="country" src="germany.jpg">
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="germanbeer.jpg"/></li>
+					<li class="contents">geman beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="germanbeer.jpg"/></li>
+					<li class="contents">geman beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="germanbeer.jpg"/></li>
+					<li class="contents">geman beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="germanbeer.jpg"/></li>
+					<li class="contents">geman beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="germanbeer.jpg"/></li>
+					<li class="contents">geman beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+
+	<div class="country">
+		<marquee class="countryM" direction="down" height="100%" width="100%">
+			<img id="Czech" class="country" src="czech.jpg">
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="czechbeer.jpg"/></li>
+					<li class="contents">czech beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="czechbeer.jpg"/></li>
+					<li class="contents">czech beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="czechbeer.jpg"/></li>
+					<li class="contents">czech beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="czechbeer.jpg"/></li>
+					<li class="contents">czech beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="czechbeer.jpg"/></li>
+					<li class="contents">czech beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<div class="country">
+		<marquee direction="down" height="100%" width="100%">
+			<img id="Denmark" class="country" src="denmark.jpg">
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="denmarkbeer.jpg"/></li>
+					<li class="contents">denmark beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol-->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="denmarkbeer.jpg"/></li>
+					<li class="contents">denmark beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="denmarkbeer.jpg"/></li>
+					<li class="contents">denmark beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="denmarkbeer.jpg"/></li>
+					<li class="contents">denmark beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="denmarkbeer.jpg"/></li>
+					<li class="contents">denmark beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<div class="country">
+		<marquee direction="down" height="100%" width="100%">
+			<img id="America" class="country" src="america.jpg"/>
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="americanbeer.jpg"/></li>
+					<li class="contents">American beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="americanbeer.jpg"/></li>
+					<li class="contents">American beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="americanbeer.jpg"/></li>
+					<li class="contents">American beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="americanbeer.jpg"/></li>
+					<li class="contents">American beer: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+		</tr>
+	</table>
+
+	<div class="country" id="Canada">
+		<marquee direction="down" height="100%" width="100%">
+			<img class="country" src="canada.jpg"/>
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="canadabeer.jpg"/></li>
+					<li class="contents">CanadianBeer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="canadabeer.jpg"/></li>
+					<li class="contents">CanadianBeer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="canadabeer.jpg"/></li>
+					<li class="contents">CanadianBeer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="canadabeer.jpg"/></li>
+					<li class="contents">CanadianBeer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="canadabeer.jpg"/></li>
+					<li class="contents">CanadianBeer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+		</tr>
+	</table>
+
+	<div class="country" id="Mexico">
+		<marquee direction="down" height="100%" width="100%">
+			<img class="country" src="mexico.jpg"/>
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="MexBeer.jpg"/></li>
+					<li class="contents">Mexican Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+					<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="MexBeer.jpg"/></li>
+					<li class="contents">Mexican Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+					<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="MexBeer.jpg"/></li>
+					<li class="contents">Mexican Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+					<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="MexBeer.jpg"/></li>
+					<li class="contents">Mexican Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+					<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="MexBeer.jpg"/></li>
+					<li class="contents">Mexican Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+		</tr>
+	</table>
+
+		<div class="country" id="China">
+		<marquee direction="down" height="100%" width="100%">
+			<img class="country" src="china.jpg"/>
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="chinabeer.jpg"/></li>
+					<li class="contents">Chineese Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="chinabeer.jpg"/></li>
+					<li class="contents">Chineese Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="chinabeer.jpg"/></li>
+					<li class="contents">Chineese Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="chinabeer.jpg"/></li>
+					<li class="contents">Chineese Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="chinabeer.jpg"/></li>
+					<li class="contents">Chineese Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+		</tr>
+	</table>
+
+			<div class="country" id="Oz">
+		<marquee direction="down" height="100%" width="100%">
+			<img class="country" src="oz.jpg"/>
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="ozbeer.jpg"/></li>
+					<li class="contents">Australian Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="ozbeer.jpg"/></li>
+					<li class="contents">Australian Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="ozbeer.jpg"/></li>
+					<li class="contents">Australian Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="ozbeer.jpg"/></li>
+					<li class="contents">Australian Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+				<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="ozbeer.jpg"/></li>
+					<li class="contents">Australian Beer <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+		</tr>
+	</table>
+	
+	<div class="country" id="Merch">
+		<marquee direction="down" height="100%" width="100%">
+			<h2 class="merch">TheKeg Stuff</h2><img class="country" src="TheKeg.png"/>
+		</marquee>
+	</div>
+	<table class="contents">
+		<tr class="contents">
+			<td class="contents">
+				<!--a list, so the content image comes first followed by name,info,price -->
+				<ul class="contents">
+					<li><img class="contents" src="kanye.jpg"/></li>
+					<li class="contents">"The Keg" long T: <br><i>&#8364 10.00</i></li>
+					<!--"&#8364" is the euro symbol -->
+				</ul>
+			</td>
+
+			<td class="contents">
+				<ul class="contents">
+					<li><img class="contents" src="ri.jpg"/></li>
+					<li class="contents">"The Keg" long T (girls): <br><i>&#8364 21.50</i></li>
+				</ul>
+			</td>
+
+			<td class="contents">
+				<ul class="contents">
+					<li><img class="contents" src="adam.jpg"/></li>
+					<li class="contents">"The Keg" tshirt: <br><i>&#8364 9.99</i></li>
+				</ul>
+			</td>
+
+			<td class="contents">
+				<ul class="contents">
+					<li><img class="contents" src="ben.jpg"/></li>
+					<li class="contents">"The Keg" summer T : <br><i>&#8364 9.99</i></li>
+				</ul>
+			</td>
+
+			<td class="contents">
+				<ul class="contents">
+					<li><img class="contents" src="TheKeg.png"/></li>
+					<li class="contents">"The Keg" costers: <br><i>&#8364 1.99</i></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+ 	</div>
+
+ 	<!--Comment box, found it here: http://flexicommentbox.com/ -->
+ 	<div class="commentBox">
+ 	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="50%" height="600" id="myFlashContent"><param name="movie" value="http://flexicommentbox.com/fcb_latest_release/fcb30.swf" /><param name="allowscriptaccess" value="always" /><!--[if !IE]>--><object type="application/x-shockwave-flash" data="http://flexicommentbox.com/fcb_latest_release/fcb30.swf" width="50%" height="600"><param name="allowscriptaccess" value="always" /><!--<![endif]--><div align="center"><p><h3>To view the content please install the latest Adobe Flash Player from here:</h3></p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a><p><a href="http://flexicommentbox.com"><img src="http://alimsyed.com/flexicommentbox/Flexi_Comment_Box_v3.1_files/flexi_logo.jpg"></img></a></p><p><a href="http://flexicommentbox.com"><h1>Embed BEST Free Comment Box Widget in your Website- Flexi Comment Box v3.1</h1></a></p></div><!--[if !IE]>--></object><!--<![endif]--></object>
+ 	</div>
+
+ 	<!--Just something to end the page, doesnt do anything special, just rolls down and around -->
+ 	<marquee direction="down" height="100%" width="100%">
+	 	<h1 class="footerText">The Keg</h1>
+	 	<h2 class="footerText">Online Craft Beer Retailer</h2>
+ 	</marquee>
+
+	<!--The footers background opacity is set to 0.5, so the background appears transparent,
+	 on hover the opacity is set to 0.9, so it appears less transparent.
+	 The footer will follow the scroll down the page -->
+	<footer class="TheKegFooter">
+		<!--The text is white so its not too obtrusive, but on hover it turns gold so its easier to read (and gold is kinda beer coloured too) -->
+		<p class="footerText">TheKeg &#174 &#8482</p><!--"&#174" is the code for registered, "#8482" is the code for trademark -->
+		<p class="footerText">&#169 A5group</p><!--"&#169" is the code for copyright -->
+		<a class="footerText" href="https://www.facebook.com/pages/A5maynooth/805094896242374?fref=nf">Facebook</a><!--link to the facebook -->
+		<a class="footerText" href="TheKeg.html">Return to top</a>
+	</footer>
+</body>
+</html>
